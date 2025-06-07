@@ -29,6 +29,7 @@ class LoginScreen extends StatelessWidget {
                 onPressed: () => Navigator.pushReplacementNamed(context, '/home'),
                 child: Text("Login"),
               ),
+              const SizedBox(height: 16),
               TextButton(
                 onPressed: () => Navigator.pushReplacementNamed(context, '/home'),
                 child: Text("Continue as guest"),

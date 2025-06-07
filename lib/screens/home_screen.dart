@@ -128,9 +128,9 @@ class DashboardView extends StatelessWidget {
               ProgressCard(title: "Water", value: glassesDrunk, goal: goal),
             ],
           ),
-          SizedBox(height: 16),
+          SizedBox(height: 40),
           HealthTipCarousel(),
-          SizedBox(height: 16),
+          SizedBox(height: 40),
           Row(
             children: [
               Expanded(
@@ -154,6 +154,59 @@ class DashboardView extends StatelessWidget {
                 ),
               ),
             ],
+          ),
+          SizedBox(height: 16),
+
+          //add more features or some charts here
+          Card(
+            color: Colors.orange[50],
+            margin: EdgeInsets.symmetric(vertical: 8),
+            child: ListTile(
+              leading: Icon(Icons.local_fire_department, color: Colors.orange),
+              title: Text("Calories Burned"),
+              subtitle: Text("520 kcal burned today"),
+              trailing: Icon(Icons.trending_up, color: Colors.orange),
+            ),
+          ),
+          Card(
+            color: Colors.blue[50],
+            margin: EdgeInsets.symmetric(vertical: 8),
+            child: ListTile(
+              leading: Icon(Icons.bedtime, color: Colors.blue),
+              title: Text("Sleep"),
+              subtitle: Text("7h 45m last night"),
+              trailing: Icon(Icons.nightlight_round, color: Colors.blue),
+            ),
+          ),
+          Card(
+            color: Colors.green[50],
+            margin: EdgeInsets.symmetric(vertical: 8),
+            child: ListTile(
+              leading: Icon(Icons.show_chart, color: Colors.green),
+              title: Text("Weekly Activity"),
+              subtitle: Text("You are on track!"),
+              trailing: Icon(Icons.check_circle, color: Colors.green),
+            ),
+          ),
+          SizedBox(height: 16),
+          Container(
+            padding: EdgeInsets.all(16),
+            decoration: BoxDecoration(
+              color: Colors.purple[50],
+              borderRadius: BorderRadius.circular(12),
+            ),
+            child: Row(
+              children: [
+                Icon(Icons.lightbulb, color: Colors.purple),
+                SizedBox(width: 12),
+                Expanded(
+                  child: Text(
+                    "Tip: Consistency is key! Try to move every hour for better health.",
+                    style: TextStyle(fontStyle: FontStyle.italic),
+                  ),
+                ),
+              ],
+            ),
           ),
         ],
       ),

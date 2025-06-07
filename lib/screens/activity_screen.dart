@@ -74,7 +74,7 @@ class _ActivityScreenState extends State<ActivityScreen> {
           //     child: Text("No activities logged yet"),
           //   ),
           Container(
-            height: MediaQuery.of(context).size.height * 0.9,
+            height: MediaQuery.of(context).size.height * 0.7,
             child: ListView.builder(
               padding: const EdgeInsets.all(16),
               itemCount: activities.length,

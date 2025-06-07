@@ -56,15 +56,6 @@ class FitTrackApp extends StatelessWidget {
 
         return MaterialApp(
           title: 'FitTrack',
-          debugShowCheckedModeBanner: false,
-          theme: ThemeData.dark().copyWith(
-            useMaterial3: true,
-            colorScheme: const ColorScheme.dark().copyWith(
-              primary: Colors.greenAccent,
-              secondary: Colors.tealAccent,
-            ),
-            scaffoldBackgroundColor: Colors.black,
-          ),
           builder: (context, child) {
             if (isMobile) return child!;
 
